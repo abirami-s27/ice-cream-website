@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Scoop Ice Cream Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>🍦 Sweet Scoop</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">HAPPINESS IN EVERY SCOOP!</p>
+
+            <h2>Life Is Better<br>With Ice Cream 🍨</h2>
+
+            <p>
+                Discover your favourite flavours
+                and make every moment sweeter!
+            </p>
+
+            <a href="#menu" class="shop-btn">Explore Flavours</a>
+        </div>
+
+        <div class="hero-icecream">🍦</div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Delicious Menu 🍨</h2>
+
+        <p class="section-description">
+            Choose your favourite ice cream!
+        </p>
+
+        <div class="icecream-container">
+
+            <div class="icecream-card">
+                <div class="icecream-image">🍓</div>
+                <h3>Strawberry Bliss</h3>
+                <p>Sweet and creamy strawberry flavour.</p>
+                <h4>₹80</h4>
+                <button onclick="addToCart(1)">
+                    Add to Cart +
+                </button>
+            </div>
+
+            <div class="icecream-card">
+                <div class="icecream-image">🍫</div>
+                <h3>Chocolate Dream</h3>
+                <p>Rich chocolate for chocolate lovers.</p>
+                <h4>₹100</h4>
+                <button onclick="addToCart(2)">
+                    Add to Cart +
+                </button>
+            </div>
+
+            <div class="icecream-card">
+                <div class="icecream-image">🍦</div>
+                <h3>Vanilla Magic</h3>
+                <p>Classic vanilla with a creamy taste.</p>
+                <h4>₹60</h4>
+                <button onclick="addToCart(3)">
+                    Add to Cart +
+                </button>
+            </div>
+
+            <div class="icecream-card">
+                <div class="icecream-image">🍪</div>
+                <h3>Cookie Crunch</h3>
+                <p>Creamy ice cream with cookie flavour.</p>
+                <h4>₹120</h4>
+                <button onclick="addToCart(4)">
+                    Add to Cart +
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h2>🛒 Your Shopping Cart</h2>
+
+        <div id="cart-items">
+            <p class="empty-cart">
+                Your cart is empty. Add some ice cream! 🍦
+            </p>
+        </div>
+
+        <div class="cart-total">
+            Total: ₹<span id="total">0</span>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Place Order
+        </button>
+
+        <p id="message" aria-live="polite"></p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Sweet Scoop 💗</h2>
+
+        <p>
+            Sweet Scoop is a little place full of happiness!
+            We bring you delicious ice cream flavours
+            to make your day sweeter.
+            Every scoop is made to spread smiles.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us 📞</h2>
+
+        <p>📍 Location: Bangalore, India</p>
+        <p>📧 Email: hello@sweetscoop.example</p>
+        <p>⏰ Opening Hours: 10 AM – 10 PM</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>🍦 Sweet Scoop | Made with Love 💗</p>
+        <p>© 2026 Sweet Scoop Ice Cream Shop</p>
+    </footer>
+
+</body>
+</html>
